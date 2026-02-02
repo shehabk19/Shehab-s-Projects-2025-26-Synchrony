@@ -1,0 +1,64 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* ID SELECTOR */
+#dashboard {
+  background-image: url("dashboard-bg.jpg");
+  background-size: cover;
+  padding: 20px;
+}
+
+/* CLASS SELECTOR */
+.section {
+  background-color: white;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* DESCENDANT SELECTOR */
+.section h1 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* CENTER ELEMENT */
+table {
+  margin: 0 auto;
+}
+
+/* FORM STYLING */
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .section {
+    width: 95%;
+  }
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .section {
+    width: 90%;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+  .section {
+    width: 70%;
+  }
+}

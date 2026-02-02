@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Synchrony Student Dashboard</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="dashboard" class="class">
+
+  <!-- SEMANTIC SECTION -->
+  <section id="overview" class="section dashboard">
+    <h1>Synchrony Student Dashboard</h1>
+    <p>This dashboard helps students track assignments, progress, and feedback.</p>
+
+    <!-- cite + code -->
+    <p>Design inspiration: <cite>Synchrony Learning Platform</cite></p>
+    <p>Sample data format: <code>{ "assignment": "Math HW", "status": "Complete" }</code></p>
+  </section>
+
+  <!-- LINKS -->
+  <section>
+    <h2>Navigation</h2>
+
+    <!-- absolute + new tab -->
+    <a href="https://www.synchrony.com" target="_blank">Official Synchrony Website</a><br>
+
+    <!-- relative -->
+    <a href="progress.html">View Progress Page</a>
+  </section>
+
+  <!-- FORM -->
+  <section>
+    <h2>Student Feedback Form</h2>
+    <form action="#" method="post" name="feedbackForm" class="form">
+
+      <label>Student Name</label><br>
+      <input type="text" name="studentName" placeholder="Enter your name"><br><br>
+
+      <label>Feedback</label><br>
+      <textarea name="feedback" rows="4" cols="30"></textarea><br><br>
+
+      <label>
+        <input type="checkbox" name="notifications"> Enable notifications
+      </label><br><br>
+
+      <input type="submit" value="Submit Feedback">
+    </form>
+  </section>
+
+  <!-- TABLE -->
+  <section>
+    <h2>Assignment Overview</h2>
+    <table border="1">
+      <tr>
+        <td colspan="3">Current Assignments</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Math</td>
+        <td>Homework 3</td>
+        <td>Complete</td>
+      </tr>
+      <tr>
+        <td>Quiz Review</td>
+        <td>In Progress</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- MULTIMEDIA -->
+  <section>
+    <h2>Learning Resources</h2>
+
+    <video width="320" controls>
+      <source src="dashboard-tour.mp4" type="video/mp4">
+    </video><br><br>
+
+    <audio controls>
+      <source src="study-tips.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+
+</body>
+</html>
