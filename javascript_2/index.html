@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GradGuru Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="welcomeMessage()">
+
+    <h1>GradGuru</h1>
+
+    <div class="container">
+
+        <h2>Task Manager</h2>
+
+        <input id="taskInput" type="text" placeholder="Enter a task">
+
+        <br>
+
+        <select id="priority">
+            <option value="low">Low Priority</option>
+            <option value="medium">Medium Priority</option>
+            <option value="high">High Priority</option>
+        </select>
+
+        <br>
+
+        <button onclick="addTask()">Add Task</button>
+
+        <ul id="taskList"></ul>
+
+        <p id="timerText"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
